@@ -4,7 +4,7 @@ import { AudioVisualizer } from "./components/AudioVisualizer";
 import { TranscriptPanel } from "./components/TranscriptPanel";
 import { EventCard } from "./components/EventCard";
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:3001";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL ?? "";
 
 function App() {
   const {

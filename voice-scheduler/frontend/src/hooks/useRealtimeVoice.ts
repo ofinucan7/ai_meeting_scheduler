@@ -1,7 +1,7 @@
 import { useState, useRef, useCallback } from "react";
 import { AgentStatus, TranscriptEntry, EventDetails, CreatedEvent } from "../types";
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:3001";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL ?? "";
 
 export function useRealtimeVoice() {
   const [status, setStatus] = useState<AgentStatus>("idle");

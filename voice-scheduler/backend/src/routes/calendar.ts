@@ -43,11 +43,11 @@ calendarRouter.post("/create", async (req: Request, res: Response) => {
           : `Scheduled by: ${attendee_name}`,
         start: {
           dateTime: start_datetime,
-          timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+          timeZone: "America/New_York",
         },
         end: {
           dateTime: end_datetime,
-          timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+          timeZone: "America/New_York",
         },
         reminders: {
           useDefault: false,
